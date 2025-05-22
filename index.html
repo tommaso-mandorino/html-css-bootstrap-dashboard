@@ -26,18 +26,6 @@
               integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
               crossorigin="anonymous">
 
-        <!-- Bootstrap JS linking -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-                integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-                crossorigin="anonymous">
-        </script>
-
-        <!-- Popper JS linking -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-                crossorigin="anonymous">
-        </script>
-
         <!-- Page title declaration -->
         <title>Bootstrap dashboard</title>
 
@@ -46,84 +34,194 @@
 
     <!-- #region Body -->
     <body>
+
+        <!-- #region Page header -->
+        <header>
         
-        <!-- #region Main menu -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- #region Main menu -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <!-- #region Fluid container -->
-            <div class="container-fluid">
+                <!-- #region Fluid container -->
+                <div class="container-fluid">
 
-                <!-- Logo-link -->
-                <a class="navbar-brand" href="./">
+                    <!-- Logo-link -->
+                    <a class="navbar-brand" href="./">
 
-                    <!-- Logo-link image -->
-                     <img width="70" src="./images/duck-logo.png" alt="Logo paperella">
+                        <!-- Logo-link image -->
+                        <img width="70" src="./images/duck-logo.png" alt="Logo paperella">
 
-                </a>
+                    </a>
 
-                <!-- Menu button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Menu button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        
+                        <!-- Menu button icon -->
+                        <span class="navbar-toggler-icon"></span>
                     
-                    <!-- Menu button icon -->
-                    <span class="navbar-toggler-icon"></span>
-                
-                </button>
+                    </button>
 
-                <!-- #region Menu links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- #region Menu links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <!-- Menu list -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Menu list -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <!-- Menu item -->
-                        <li class="nav-item">
+                            <!-- Menu item -->
+                            <li class="nav-item">
 
-                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                                <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
 
-                        </li>
+                            </li>
 
-                        <!-- Menu item -->
-                        <li class="nav-item">
+                            <!-- Menu item -->
+                            <li class="nav-item">
 
-                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                                <a class="nav-link" href="#">Anagrafica Utenti</a>
 
-                        </li>
+                            </li>
 
-                        <!-- Menu item -->
-                        <li class="nav-item">
+                            <!-- Menu item -->
+                            <li class="nav-item">
 
-                            <a class="nav-link" href="#">Storico Prestiti</a>
+                                <a class="nav-link" href="#">Storico Prestiti</a>
 
-                        </li>
+                            </li>
 
-                        <!-- Menu item -->
-                        <li class="nav-item">
+                            <!-- Menu item -->
+                            <li class="nav-item">
 
-                            <a class="nav-link" href="#">Help</a>
+                                <a class="nav-link" href="#">Help</a>
 
-                        </li>
+                            </li>
 
-                    </ul>
+                        </ul>
 
-                    <!-- Menu form -->
-                    <form class="d-flex" role="search">
+                        <!-- Menu form -->
+                        <form class="d-flex" role="search">
 
-                        <!-- Search input -->
-                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search"/>
+                            <!-- Search input -->
+                            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search"/>
 
-                        <!-- Submit button -->
-                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                            <!-- Submit button -->
+                            <button class="btn btn-outline-light" type="submit">Cerca</button>
 
-                    </form>
+                        </form>
+
+                    </div>
+                    <!-- #endregion Menu links -->
 
                 </div>
-                <!-- #endregion Menu links -->
+                <!-- #endregion Fluid container -->
+
+            </nav>
+            <!-- #endregion Main menu -->
+
+        </header>
+        <!-- #endregion Page header -->
+
+        <!-- #region Main section -->
+        <main>
+
+            <!-- #region Main grid -->
+            <div class="container">
+
+                <!-- Row -->
+                <div class="row py-4">
+
+                    <!-- #region First column -->
+                    <div class="col-12 col-lg-9">
+                        
+                        <!-- First column header -->
+                        <header class="d-flex justify-content-between align-items-center">
+
+                            <!-- Page title -->
+                            <h1 class="d-inline-block mb-0 fs-3 fw-light">Catalogo Libri</h1>
+
+                            <!-- Add book button -->
+                             <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+
+                        </header>
+
+                    </div>
+                    <!-- #endregion First column -->
+
+                    <!-- #region Second column -->
+                    <div class="col-12 col-lg-3">
+            
+                        <!-- #region Todo card -->
+                        <div class="card">
+
+                            <!-- Card header -->
+                            <h2 class="card-header fs-3 fw-light">Todo</h2>
+
+                            <!-- #region Todo checklist -->
+                            <ul class="list-group p-3 fw-light small">
+
+                                <!-- List item -->
+                                <li class="list-group-item">
+
+                                    <!-- Checkbox -->
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+
+                                    <!-- Label -->
+                                    <label class="form-check-label" for="firstCheckbox">Chiamare segreteria</label>
+
+                                </li>
+
+                                <!-- List item -->
+                                <li class="list-group-item">
+
+                                    <!-- Checkbox -->
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+
+                                    <!-- Label -->
+                                    <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti</label>
+
+                                </li>
+
+                                <!-- List item -->
+                                <li class="list-group-item">
+
+                                    <!-- Checkbox -->
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+
+                                    <!-- Label -->
+                                    <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+
+                                </li>
+
+                            </ul>
+                            <!-- #endregion Todo checklist -->
+
+                        </div>
+                        <!-- #endregion Todo card -->
+
+                    </div>
+                    <!-- #endregion Second column -->
+
+                </div>
 
             </div>
-            <!-- #endregion Fluid container -->
+            <!-- #endregion Main grid -->
 
-        </nav>
-        <!-- #endregion Main menu -->
+        </main>
+        <!-- #endregion Main section -->
+
+        <!-- #region JS linkings -->
+
+            <!-- Bootstrap JS linking -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+                    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+                    crossorigin="anonymous">
+            </script>
+
+            <!-- Popper JS linking -->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                    crossorigin="anonymous">
+            </script>
+
+        <!-- #endregion JS linkings -->
 
     </body>
     <!-- #endregion Body -->
